@@ -1,0 +1,24 @@
+CONFIGURACAO DA VERSAO BHAPTICS
+
+Esta pasta e um sketch Processing independente. A versao Arduino antiga nao e alterada.
+
+1. Instalar Python 3.13 x64.
+2. Abrir PowerShell nesta pasta e executar:
+   py -3.13 -m pip install -r requirements.txt
+3. No bHaptics Developer Portal, criar uma aplicacao haptica.
+4. Criar pelo menos um evento, publicar a aplicacao e gerar uma API Key.
+5. Preencher appId e apiKey em bhaptics-config.json.
+   Se o Processing nao encontrar o Python, acrescentar tambem:
+   "pythonPath": "C:\\caminho\\para\\python.exe"
+6. Manter o bHaptics Player aberto e ligar o Tactosy for Hands esquerdo.
+7. Confirmar a ligacao em Device > Connected > Feedback Test.
+8. Abrir UserInterface_bHaptics_processing.pde no Processing.
+
+A indicacao Developer Portal Connected no Player nao substitui o App ID e a API Key da aplicacao.
+
+MAPEAMENTO
+
+- Tactosy for Hands esquerda: device position 4.
+- Tres pontos de vibracao: bitmasks 1, 2 e 4; todos = 7.
+- Intensidades: baixa 43, media 63, forte 100.
+- A interface envia os timings automaticamente; a Tactosy nao controla a navegacao.
