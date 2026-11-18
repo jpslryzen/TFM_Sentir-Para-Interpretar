@@ -1,1 +1,2 @@
-Verificação
+Para utilizar o seguinte protótipo necessita do software PROCESSING.
+Após instalar, basta abrir, clicando duas vezes, no UserInterface_bHaptics_processing (formato PDE).
